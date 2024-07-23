@@ -10,13 +10,19 @@ Puedes revisar las tareas disponibles en <a href="https://purple-literature-335.
 
 ### Instrucciones:
 <ul>
-  <li>Entra a la página de Notion y elige <a href="https://purple-literature-335.notion.site/malditojefe-chat-9fdd2545136846269937239cd2ee06b4" target="_blank" rel="noopener">malditojefe.chat</a></li>
+  <li>Hacer fork a este repositorio.</li>
   
-  <li>Revisa las tareas disponibles y sus requerimentos</li>
+  <li>Revisar tareas disponibles en <a href="https://purple-literature-335.notion.site/malditojefe-chat-9fdd2545136846269937239cd2ee06b4" target="_blank" rel="noopener">Notion</a> (todas las tareas marcadas como "no comenzar" están disponibles).</li>
   
-  <li>Haz fork a este repositorio</li>
+  <li>Revisar diseño en Figma.</li>
   
-  <li>Y espera las próximas actualizaciones del juego en el canal de <a href="https://www.youtube.com/@StreamByte-mx" target="_blank" rel="noopener">StreamByte</a></li>
+  <li>Revisar requerimentos del Backend.</li>
+  
+  <li>Desarrollar solamente en las ramas Dev o Feature.</li>
+  
+  <li>No utilizar la rama Main.</li>
+  
+  <li>Formar parte de la comunidad de <a href="https://discord.gg/TCmF3PzZ" target="_blank" rel="noopener">Discord</a> para estar al tanto y asistir a las reuniones.</li>
 </ul>
 
 Otros recursos:
