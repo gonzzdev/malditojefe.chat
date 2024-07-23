@@ -15,7 +15,7 @@ export interface CommentProps {
 export function Comment({title, subtitle, content, countLikes, reactions}: CommentProps) {
     return (
         <div
-            className={`border-solid border-4 border-[#E5E4F9] p-10 rounded-2xl bg-gradient-to-b from-[#16161E] to-gray-400/60 text-white max-w-lg`}>
+            className={`border-solid border-4 border-[#E5E4F9]/80 p-10 rounded-2xl bg-gradient-to-b from-[#16161E] to-gray-400/60 text-[#e5e4f9] max-w-lg`}>
             <div className="flex flex-row gap-3 items-end">
                 <Avatar className="w-20 h-20">
                     <AvatarImage src="https://github.com/shadcn.png"/>
