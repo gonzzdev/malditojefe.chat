@@ -4,7 +4,7 @@
 
 Este proyecto fue propuesto en la comunidad de Discord de <a href="https://www.youtube.com/watch?v=r1aTMuIsLpo" target="_blank" rel="noopener">Gary Trip</a>. Donde estamos formando equipos con este y otros proyecto para la Hackathon.
 
-## ¿Te interesa colaborar ocn este proyecto?
+## ¿Te interesa colaborar con este proyecto?
 
 Puedes revisar las tareas disponibles en <a href="https://purple-literature-335.notion.site/SDK-HACKATHON-ac87302172ae40778d26cd83759874ba" target="_blank" rel="noopener">esta plantilla de Notion</a> y el diseño de la UI en <a href="https://www.figma.com/design/jZsAE5AdfBms0okpon8QHl/malditojefe.chat?node-id=0-1&t=9iZkXGt8tRhf2U4k-1">este archivo de Figma</a>.
 
