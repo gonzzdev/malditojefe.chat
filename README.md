@@ -16,18 +16,25 @@ Puedes revisar las tareas disponibles en <a href="https://purple-literature-335.
   
   <li>Haz fork a este repositorio</li>
   
-  <li>Si necesitas ayuda en cualquier cosa, puedes acercarte a la comunidad de Gary y ver su video aqui:</li>
-  <a href="https://www.youtube.com/watch?v=r1aTMuIsLpo" target="_blank" rel="noopener">
-    <img src="https://i.ytimg.com/vi/r1aTMuIsLpo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWEwSU0HMe-Uuj-Fz143XEyE3xhg" />
-  </a>
-  
-  <li>También puedes ver mi video sobre la plantilla de Notion aqui:</li>
-  <a href="https://www.youtube.com/watch?v=r1aTMuIsLpo" target="_blank" rel="noopener">
-    <img src="https://i.ytimg.com/vi/gB-UoZa5O6I/hq720.jpg?sqp=-oaymwExCNAFEJQDSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYJyBlKFswDw==&rs=AOn4CLBo-_vk8HTIYDc0sqokBqRFXAHHtA" />
-  </a>
-
   <li>Y espera las próximas actualizaciones del juego en el canal de <a href="https://www.youtube.com/@StreamByte-mx" target="_blank" rel="noopener">StreamByte</a></li>
 </ul>
+
+Otros recursos:
+<ol>
+  <li>
+    <a href="https://www.youtube.com/watch?v=r1aTMuIsLpo" target="_blank" rel="noopener">
+      Video sobre la plantilla de Notion.
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.youtube.com/watch?v=r1aTMuIsLpo" target="_blank" rel="noopener">
+      Video sobre la creación de equipos en el canal de Gary Trip
+    </a>
+  </li>
+</ol>
+  
+  
 
 # Fechas
 <ul>
