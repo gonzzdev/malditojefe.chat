@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![logo-w](https://github.com/user-attachments/assets/27dcd347-ab81-4ddf-9485-ad0c3c7b2beb)
 
-## Getting Started
+# Proyecto para participar en Hackathon Vercel SDK 2024 por <a href="https://github.com/midudev/hackaton-vercel-2024">@midudev</a>
 
-First, run the development server:
+Este proyecto fue propuesto en la comunidad de Discord de <a href="https://www.youtube.com/watch?v=r1aTMuIsLpo" target="_blank" rel="noopener">Gary Trip</a>. Donde estamos formando equipos con este y otros proyecto para la Hackathon.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ¿Te interesa colaborar ocn este proyecto?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Puedes revisar las tareas disponibles en <a href="https://purple-literature-335.notion.site/SDK-HACKATHON-ac87302172ae40778d26cd83759874ba" target="_blank" rel="noopener">esta plantilla de Notion</a> y el diseño de la UI en <a href="https://www.figma.com/design/jZsAE5AdfBms0okpon8QHl/malditojefe.chat?node-id=0-1&t=9iZkXGt8tRhf2U4k-1">este archivo de Figma</a>.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Instrucciones:
+<ul>
+  <li>Entra a la página de Notion y elige <a href="https://purple-literature-335.notion.site/malditojefe-chat-9fdd2545136846269937239cd2ee06b4" target="_blank" rel="noopener">malditojefe.chat</a></li>
+  
+  <li>Revisa las tareas disponibles y sus requerimentos</li>
+  
+  <li>Haz fork a este repositorio</li>
+  
+  <li>Si necesitas ayuda en cualquier cosa, puedes acercarte a la comunidad de Gary y ver su video aqui:</li>
+  <a href="https://www.youtube.com/watch?v=r1aTMuIsLpo" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/r1aTMuIsLpo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWEwSU0HMe-Uuj-Fz143XEyE3xhg" />
+  </a>
+  
+  <li>También puedes ver mi video sobre la plantilla de Notion aqui:</li>
+  <a href="https://www.youtube.com/watch?v=r1aTMuIsLpo" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/gB-UoZa5O6I/hq720.jpg?sqp=-oaymwExCNAFEJQDSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYJyBlKFswDw==&rs=AOn4CLBo-_vk8HTIYDc0sqokBqRFXAHHtA" />
+  </a>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  <li>Y espera las próximas actualizaciones del juego en el canal de <a href="https://www.youtube.com/@StreamByte-mx" target="_blank" rel="noopener">StreamByte</a></li>
+</ul>
 
-## Learn More
+# Fechas
+<ul>
+  <li><strong>Fecha límite:</strong> 6 de Agosto de 2024</li>
+  <li><strong>Votaciones finales del evento:</strong> 13 de Agosto de 2024</li>
+</ul>
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Repositorio del evento:
+<a href="https://github.com/midudev/hackaton-vercel-2024" target="_blank" rel="noopener">midudev/hackathon-vercel-2024</a>
