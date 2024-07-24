@@ -3,6 +3,7 @@ import {obtenerCommentarios, Paginacion} from "@/actions/comments";
 import {Comment, CommentProps} from "@/components/comment";
 import {Input} from "@/components/ui/input";
 import type {Metadata} from "next";
+import {Boton} from "@/components/ui/boton"
 
 export const metadata: Metadata = {
     title: "malditojefe.chat 🔥 | El chat del trabajo que sí quieres responder en tu día libre",
@@ -43,9 +44,10 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-0 w-full z-50">
                     <div className="flex justify-center w-full">
-                        <Input
+                        {/* <Input
                             className="placeholder:text-gray-400 shadow-sm rounded-full focus-visible:ring-0 border border-red-900 text-[#E5E4F9]/80 bg-[#16161E] w-2/4 text-2xl px-5 py-8 italic"
-                            placeholder="Escribe en el chat para comenzar el juego"/>
+                            placeholder="Escribe en el chat para comenzar el juego"/> */}
+                            <Boton />
                     </div>
                 </div>
             </div>

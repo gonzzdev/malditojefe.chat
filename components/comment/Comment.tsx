@@ -15,17 +15,17 @@ export interface CommentProps {
 export function Comment({title, subtitle, content, countLikes, reactions}: CommentProps) {
     return (
         <div
-            className={`border-solid border-4 border-[#E5E4F9]/80 p-10 rounded-2xl bg-gradient-to-b from-[#16161E] to-gray-400/60 text-[#e5e4f9] max-w-lg`}>
+            className={`border-solid border-4 border-[#E5E4F9]/80 p-8 rounded-2xl bg-gradient-to-b from-[#16161E] to-gray-400/60 text-[#e5e4f9] max-w-xs sm:p-10 sm:max-w-lg md:p-6 md:max-w-[432px] 2xl:p-10 2xl:max-w-lg`}>
             <div className="flex flex-row gap-3 items-end">
-                <Avatar className="w-20 h-20">
+                <Avatar className="w-14 h-14">
                     <AvatarImage src="https://github.com/shadcn.png"/>
                     <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
                 <div>
-                    <div className="text-3xl">
+                    <div className="text-xl">
                         {title}
                     </div>
-                    <div className="text-[#E5E4F9]">
+                    <div className="text-[#EAD82A] text-xs">
                         {subtitle}
                     </div>
                 </div>

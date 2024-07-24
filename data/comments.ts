@@ -3,14 +3,14 @@ import {CommentProps} from "@/components/comment/Comment";
 export const obtenerData = (): Array<CommentProps> => [
     {
         "id": 1,
-        "title": "Amazing Sunset",
-        "subtitle": "An Evening to Remember",
-        "content": "The sky turned a beautiful hue of orange and pink as the sun set behind the mountains.",
+        "title": "Juanito Carcaza",
+        "subtitle": "La camiseta de la empresa",
+        "content": "El jefe decició darle una camiseta de la empresa como muestra de su aprecio. Y como regalo de Navidad.",
         "countLikes": 120,
         "reactions": [
             {
                 "id": 1,
-                "type": "funny",
+                "type": "fire",
                 "amount": 5
             },
             {
@@ -20,16 +20,16 @@ export const obtenerData = (): Array<CommentProps> => [
             },
             {
                 "id": 3,
-                "type": "surprise",
+                "type": "baddy",
                 "amount": 10
             }
         ]
     },
     {
         "id": 2,
-        "title": "Graduation Day",
-        "subtitle": "A Proud Moment",
-        "content": "Today, I graduated with honors. It was a moment of pride and joy for me and my family.",
+        "title": "Jaime el Duende",
+        "subtitle": "Pizza para desayunar",
+        "content": "Esperaba un bono por haberse quedado a trabajar hasta tarde. Lo recibieron con una rica pizza para el desayuno.",
         "countLikes": 200,
         "reactions": [
             {
@@ -51,14 +51,14 @@ export const obtenerData = (): Array<CommentProps> => [
     },
     {
         "id": 3,
-        "title": "Unexpected Rain",
-        "subtitle": "A Sudden Downpour",
-        "content": "Out of nowhere, the sky opened up and it started raining heavily. It was unexpected but refreshing.",
+        "title": "Elon Chost",
+        "subtitle": "En mi compu no sirve",
+        "content": "Por alguna razón, el trabajo que hiciste no se muestra en la computadora de tu jefe. Y no te deja revisarlo.",
         "countLikes": 80,
         "reactions": [
             {
                 "id": 1,
-                "type": "funny",
+                "type": "fire",
                 "amount": 8
             },
             {
@@ -75,9 +75,9 @@ export const obtenerData = (): Array<CommentProps> => [
     },
     {
         "id": 4,
-        "title": "New Puppy",
-        "subtitle": "Welcome to the Family",
-        "content": "We just got a new puppy! He's small, fluffy, and full of energy. The kids are thrilled.",
+        "title": "midudev",
+        "subtitle": "Bono de productividad",
+        "content": "La empresa decidió reconocer tu esfuerzo con una ida al cine... Y palomitas.",
         "countLikes": 150,
         "reactions": [
             {
@@ -99,9 +99,9 @@ export const obtenerData = (): Array<CommentProps> => [
     },
     {
         "id": 5,
-        "title": "First Marathon",
-        "subtitle": "A Challenge Accepted",
-        "content": "I completed my first marathon today. It was exhausting but incredibly rewarding.",
+        "title": "Ash Catsup",
+        "subtitle": "Atrapalos a todos",
+        "content": "Recibió una acta administrativa por ser sorprendido jugando videojuegos mientras hacía del baño.",
         "countLikes": 300,
         "reactions": [
             {
@@ -123,9 +123,9 @@ export const obtenerData = (): Array<CommentProps> => [
     },
     {
         "id": 6,
-        "title": "Beach Day",
-        "subtitle": "Fun in the Sun",
-        "content": "Spent the day at the beach, swimming in the ocean and building sandcastles. It was perfect.",
+        "title": "Gary Trip",
+        "subtitle": "Echale ganas pues",
+        "content": "El jefe quiere darte una mentoría. Resulta que solo tienes que echarle más ganas",
         "countLikes": 175,
         "reactions": [
             {
@@ -147,9 +147,9 @@ export const obtenerData = (): Array<CommentProps> => [
     },
     {
         "id": 7,
-        "title": "Mountain Hike",
-        "subtitle": "Adventure Awaits",
-        "content": "Hiked up the mountain today. The view from the top was absolutely breathtaking.",
+        "title": "Bryan.r",
+        "subtitle": "Ya sé que estás de vacaciones",
+        "content": "Pero es urgente que puedas revisar esta tarea que le tomaría 30 minutos al jefe.",
         "countLikes": 220,
         "reactions": [
             {
@@ -171,9 +171,9 @@ export const obtenerData = (): Array<CommentProps> => [
     },
     {
         "id": 8,
-        "title": "Cooking Class",
-        "subtitle": "A Culinary Experience",
-        "content": "Took a cooking class today. Learned to make some amazing dishes that I can't wait to try at home.",
+        "title": "Bbeboy",
+        "subtitle": "Me gustó tu proyecto",
+        "content": "¿Recuerdas el proyecto que mandaste para postular en la empresa?. Pues ahora lo están usando aunque no te contrataron.",
         "countLikes": 140,
         "reactions": [
             {
@@ -183,8 +183,8 @@ export const obtenerData = (): Array<CommentProps> => [
             },
             {
                 "id": 2,
-                "type": "sad",
-                "amount": 0
+                "type": "baddy",
+                "amount": 200
             },
             {
                 "id": 3,
@@ -195,9 +195,9 @@ export const obtenerData = (): Array<CommentProps> => [
     },
     {
         "id": 9,
-        "title": "Concert Night",
-        "subtitle": "Live Music",
-        "content": "Went to a live concert tonight. The music was incredible and the atmosphere electric.",
+        "title": "José Gonzz",
+        "subtitle": "Fiesta sorpresa",
+        "content": "Tienes que pagar para entrar a la fiesta a la que no querías ir. Pero tu jefe te pidió.",
         "countLikes": 250,
         "reactions": [
             {
