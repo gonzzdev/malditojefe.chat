@@ -18,6 +18,7 @@ export default function Home() {
             </div>
             <div className="absolute bottom-0 w-full z-50 flex justify-center italic">
                 <InputChat disabled={true}/>
+                {/* <Boton /> */}
             </div>
         </main>
     );

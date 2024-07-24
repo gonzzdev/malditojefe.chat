@@ -1,12 +1,10 @@
-import React from "react";
-
 export interface ReactionProps {
     id: number,
     type: "funny" | "sad" | "surprise" | "fire" | "baddy" | "cry"
     amount: number
 }
 
-export const Reaction: React.FC<ReactionProps> = ({id, type, amount}: ReactionProps) => {
+export const Reaction = ({id, type, amount}: ReactionProps) =>{
 
     const emoji = (): string => {
         switch (type) {
@@ -22,8 +20,7 @@ export const Reaction: React.FC<ReactionProps> = ({id, type, amount}: ReactionPr
                 return '🥲';
             case "surprise":
                 return '😮';
-            default:
-                return '😂';
+            default: return '😂';
         }
     }
     return (
