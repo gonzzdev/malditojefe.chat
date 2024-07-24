@@ -1,10 +1,9 @@
 import Image from "next/image";
-import {obtenerCommentarios, Paginacion} from "@/actions";
-import {Comment, CommentProps, Input} from "@/components";
+import {Input} from "@/components/exports";
 import type {Metadata} from "next";
-import {BackgroundRadial} from "@/components/ui/BackgroundRadial";
-import {BackgroundLinear} from "@/components/ui/BackgroundLinear";
-import {BackgroundComment} from "@/components/comment/BackgroundComment";
+import {BackgroundRadial} from "@/components/exports";
+import {BackgroundLinear} from "@/components/exports";
+import {BackgroundComment} from "@/components/exports";
 
 export const metadata: Metadata = {
     title: "Home",
@@ -12,20 +11,18 @@ export const metadata: Metadata = {
 }
 export default function Home() {
     return (
-        <main>
-            <div className="relative w-full h-[calc(100vh-8rem)] overflow-hidden">
-                <BackgroundComment/>
-                <BackgroundRadial/>
-                <BackgroundLinear/>
-                <div className="absolute h-full flex items-center justify-center w-full mb-40 z-50">
-                    <Image alt="logo" src="/static/images/logo.png" width="250" height="250"/>
-                </div>
-                <div className="absolute bottom-0 w-full z-50">
-                    <div className="flex justify-center w-full">
-                        <Input
-                            className="placeholder:text-gray-400 shadow-sm rounded-full focus-visible:ring-0 border border-red-900 text-gray-400 bg-black w-2/4 text-2xl px-5 py-8 italic"
-                            placeholder="Escribe en el chat para comenzar el juego"/>
-                    </div>
+        <main className="relative w-full h-[calc(100vh-8rem)] overflow-hidden">
+            <BackgroundComment/>
+            <BackgroundRadial/>
+            <BackgroundLinear/>
+            <div className="absolute h-full flex items-center justify-center w-full mb-40 z-50">
+                <Image alt="logo" src="/static/images/logo.png" width="250" height="250"/>
+            </div>
+            <div className="absolute bottom-0 w-full z-50">
+                <div className="flex justify-center w-full">
+                    <Input
+                        className="placeholder:text-gray-400 shadow-sm rounded-full focus-visible:ring-0 border border-red-900 text-gray-400 bg-black w-2/4 text-2xl px-5 py-8 italic"
+                        placeholder="Escribe en el chat para comenzar el juego"/>
                 </div>
             </div>
         </main>

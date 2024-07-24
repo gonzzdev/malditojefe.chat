@@ -1,4 +1,6 @@
-export function BackgroundLinear() {
+import React from "react";
+
+export const BackgroundLinear: React.FC = () => {
     return (
         <>
             <div

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function  Header(){
+export function Header() {
 
-    return(
+    return (
 
-        <div className="bg-[#F4222D] w-full px-10 py-5 flex flex-row justify-between items-center">
+        <nav className="bg-[#F4222D] w-full px-10 py-5 flex flex-row justify-between items-center">
             <div>
                 <Image alt="logo principal" src="/static/images/logo_principal.png" width="50" height="50"/>
             </div>
@@ -31,6 +31,6 @@ export function  Header(){
                     </Link>
                 </li>
             </ul>
-        </div>
+        </nav>
     )
 }

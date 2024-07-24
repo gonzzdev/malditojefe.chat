@@ -1,4 +1,4 @@
-import {CommentProps} from "@/components/comment/Comment";
+import {CommentProps} from "@/components/comment/comment";
 
 export const obtenerData = (): Array<CommentProps> => [
     {
