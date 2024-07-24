@@ -1,5 +1,5 @@
 import {obtenerData} from "@/data/comments";
-import {CommentProps} from "@/components/comment/Comment";
+import {CommentProps} from "@/components/comment/comment";
 
 export interface Paginacion<T> {
     data: T[],

@@ -1,5 +1,6 @@
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
-import {Reaction, ReactionProps} from "@/components/comment/Reaction";
+import {Reaction, ReactionProps} from "@/components/comment/reaction";
+import React from "react";
 
 
 export interface CommentProps {
@@ -12,7 +13,8 @@ export interface CommentProps {
 }
 
 
-export function Comment({title, subtitle, content, countLikes, reactions}: CommentProps) {
+export const Comment: React.FC<CommentProps> = ({title, subtitle, content, countLikes, reactions}: CommentProps) =>
+{
     return (
         <div
             className={`border-solid border-4 border-[#E5E4F9]/80 p-8 rounded-2xl bg-gradient-to-b from-[#16161E] to-gray-400/60 text-[#e5e4f9] max-w-xs sm:p-10 sm:max-w-lg md:p-6 md:max-w-[432px] 2xl:p-10 2xl:max-w-lg`}>
