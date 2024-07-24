@@ -17,8 +17,8 @@ export default function Home() {
                 <Image alt="logo" src="/static/images/logo.png" width="250" height="250"/>
             </div>
             <div className="absolute bottom-0 w-full z-50 flex justify-center italic">
-                <InputChat disabled={true}/>
-                {/* <Boton /> */}
+                {/* <InputChat disabled={true}/> */}
+                <Boton />
             </div>
         </main>
     );
