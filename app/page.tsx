@@ -9,15 +9,14 @@ export const metadata: Metadata = {
 }
 export default function Home() {
     return (
-        <main className="relative w-full h-[calc(100vh-8rem)] overflow-hidden">
+        <main className="relative w-full h-[calc(100vh-4rem)] overflow-hidden">
             <BackgroundComment/>
             <BackgroundRadial/>
             <BackgroundLinear/>
             <div className="absolute h-full flex items-center justify-center w-full mb-40 z-50">
                 <Image alt="logo" src="/static/images/logo.png" width="250" height="250"/>
             </div>
-            <div className="absolute bottom-0 w-full z-50 flex justify-center italic">
-                {/* <InputChat disabled={true}/> */}
+            <div className="absolute bottom-2 w-full z-50 flex justify-center italic">
                 <Boton />
             </div>
         </main>
