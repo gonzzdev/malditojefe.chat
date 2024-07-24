@@ -1,9 +1,6 @@
 import Image from "next/image";
-import {Input} from "@/components/exports";
+import {InputChat, BackgroundRadial, BackgroundLinear, BackgroundComment} from "@/components/exports";
 import type {Metadata} from "next";
-import {BackgroundRadial} from "@/components/exports";
-import {BackgroundLinear} from "@/components/exports";
-import {BackgroundComment} from "@/components/exports";
 
 export const metadata: Metadata = {
     title: "Home",
@@ -18,12 +15,8 @@ export default function Home() {
             <div className="absolute h-full flex items-center justify-center w-full mb-40 z-50">
                 <Image alt="logo" src="/static/images/logo.png" width="250" height="250"/>
             </div>
-            <div className="absolute bottom-0 w-full z-50">
-                <div className="flex justify-center w-full">
-                    <Input
-                        className="placeholder:text-gray-400 shadow-sm rounded-full focus-visible:ring-0 border border-red-900 text-gray-400 bg-black w-2/4 text-2xl px-5 py-8 italic"
-                        placeholder="Escribe en el chat para comenzar el juego"/>
-                </div>
+            <div className="absolute bottom-0 w-full z-50 flex justify-center italic">
+                <InputChat disabled={true}/>
             </div>
         </main>
     );
