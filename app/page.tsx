@@ -13,11 +13,9 @@ export default function Home() {
             <BackgroundComment/>
             <BackgroundRadial/>
             <BackgroundLinear/>
-            <div className="absolute h-full flex items-center justify-center w-full mb-40 z-50">
-                <Image alt="logo" src="/static/images/logo.png" width="250" height="250"/>
-            </div>
-            <div className="absolute bottom-2 w-full z-50 flex justify-center italic">
-                <Boton />
+            <div className="absolute h-full flex flex-col items-center justify-center w-full mb-40 z-50 gap-10">
+                <Image alt="logo" src="/static/images/home/logo.svg" width="250" height="250"/>
+                <Boton/>
             </div>
         </main>
     );

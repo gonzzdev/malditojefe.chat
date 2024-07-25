@@ -5,7 +5,7 @@ export const BackgroundComment = () => {
     const comments: Paginacion<CommentProps> = obtenerCommentarios(0, 10);
     return (
         <div className="z-20 absolute -top-32 flex items-center justify-center w-full">
-            <div className="grid gap-4 min-w-max lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1">
+            <div className="grid gap-4 min-w-max grid-cols-3">
                 <div className="grid gap-4 auto-rows-max">
                     {comments.data.slice(0,4).map((comment) => {
                         return <Comment key={comment.id.toString()} {...comment}/>
