@@ -5,16 +5,13 @@ import {InputChat} from "@/components/chat/input-chat";
 export default function GamePage() {
     return (
         <main className="relative w-full h-[calc(100vh-4rem)]">
-            <div className="absolute bottom-0 max-w-[500px] md:w-full">
-                <Image alt="image del jefe la ilustracion" src="/static/images/game/jefe.png"
+            <div className="absolute -bottom-5 max-w-[500px] md:w-full">
+                <Image alt="imagen del jefe la ilustracion" src="/static/images/game/jefe.png"
                        width={0} height={0} sizes="100vw"
                        style={{width: 'auto', height: 'auto'}}
                 />
             </div>
             <div className="relative w-full h-full flex justify-center items-end z-10 py-10">
-                <div>
-
-                </div>
                 <div>
                     <InputChat disabled={false}></InputChat>
                 </div>

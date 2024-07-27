@@ -18,7 +18,7 @@ export function Header() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/home" className="hover:text-[#EAD82A] transition duration-200">
+                    <Link href="/collection" className="hover:text-[#EAD82A] transition duration-200">
                         Colección
                     </Link>
                 </li>
