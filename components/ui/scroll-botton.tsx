@@ -18,7 +18,7 @@ export const ScrollBotton = ({children, className}: ScrollBottonProps) => {
     return (
         <div
             ref={containerRef}
-            className={clsx(className, "px-5 flex flex-col gap-4 overflow-y-scroll")}
+            className={clsx(className, "px-5 flex flex-col gap-4 overflow-y-auto")}
         >
             {children}
         </div>

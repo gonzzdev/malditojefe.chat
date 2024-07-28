@@ -7,10 +7,10 @@ import {InputChat} from "@/components/chat/input-chat";
 import {MessageBot} from "@/components/chat/message-bot";
 
 export const FormChat = () => {
-    const {conversation,message,setMessage, handleOnSubmit} = useMessage()
+    const {conversation, message, setMessage, handleOnSubmit} = useMessage()
 
-    const handleOnEnter= async (event:KeyboardEvent<HTMLInputElement>)=>{
-        if(event.key === "Enter"){
+    const handleOnEnter = async (event: KeyboardEvent<HTMLInputElement>) => {
+        if (event.key === "Enter") {
             await handleOnSubmit()
         }
     }
@@ -21,7 +21,8 @@ export const FormChat = () => {
                 <ScrollBotton className="max-h-[calc(100vh-14rem)]">
                     {conversation && conversation.map(messageChat =>
                         messageChat.role == 'user' ?
-                            <MessageUser key={messageChat.id.toString()} message={messageChat} variant="warning"/>
+                            <MessageUser key={messageChat.id.toString()} message={messageChat}
+                                         variant={messageChat.state ?? 'aliviado'}/>
                             : <MessageBot key={messageChat.id.toString()} message={messageChat}/>
                     )}
                 </ScrollBotton>
