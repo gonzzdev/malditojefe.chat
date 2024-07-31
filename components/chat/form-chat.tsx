@@ -1,10 +1,7 @@
 'use client'
 import {KeyboardEvent} from "react";
-import {MessageUser} from "@/components/chat/message-user";
-import {ScrollBotton} from "@/components/ui/scroll-botton";
+import {MessageUser,ScrollBotton,InputChat,MessageBot} from "@/components/exports";
 import {useMessage} from "@/hooks";
-import {InputChat} from "@/components/chat/input-chat";
-import {MessageBot} from "@/components/chat/message-bot";
 
 export const FormChat = () => {
     const {conversation, message, setMessage, handleOnSubmit} = useMessage()

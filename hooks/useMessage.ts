@@ -1,7 +1,8 @@
 import {analizedFurious, chattingBoss, Message} from "@/actions";
-import {generateId, tool} from "ai";
+import {generateId} from "ai";
 import {readStreamableValue} from "ai/rsc";
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
+import {AwardsContext} from "@/contexts/awardsContext";
 
 const mapStringToState = (stateString: string): 'explotando' | 'moderado' | 'aliviado' | undefined => {
     switch (stateString.toLowerCase()) {
@@ -19,19 +20,28 @@ const mapStringToState = (stateString: string): 'explotando' | 'moderado' | 'ali
 export const useMessage = () => {
     const [conversation, setConversation] = useState<Message[]>([])
     const [message, setMessage] = useState<string>("")
+    const {increment} = useContext(AwardsContext);
+
     // Agrega primera interacion con el jefe
     useEffect(() => {
-            setConversation([{id: generateId(), role: 'assistant',
-                content: 'hola este un chat de bienvenida al juego del maldito jefe'}])
-        }, [])
+        setConversation([{
+            id: generateId(), role: 'assistant',
+            content: 'hola este un chat de bienvenida al juego del maldito jefe'
+        }])
+    }, [])
     const handleOnSubmit = async () => {
         const estadoBot = await analizedFurious([
             ...conversation,
             {id: generateId(), role: 'user', content: message},
         ])
+        if (estadoBot === 'explotando') {
+            console.log("entro aqui")
+            increment()
+        }
+
         const {messages, newMessage} = await chattingBoss([
             ...conversation,
-            {id: generateId(), role: 'user', content: message, state : mapStringToState(estadoBot)},
+            {id: generateId(), role: 'user', content: message, state: mapStringToState(estadoBot)},
         ]);
         let textContent = '';
 
