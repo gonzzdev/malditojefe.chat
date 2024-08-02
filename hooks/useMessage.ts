@@ -3,6 +3,7 @@ import {generateId} from "ai";
 import {readStreamableValue} from "ai/rsc";
 import {useContext, useEffect, useState} from "react";
 import {AwardsContext} from "@/contexts/awardsContext";
+import {saveMessageFurious} from "@/actions/chat";
 
 const mapStringToState = (stateString: string): 'explotando' | 'moderado' | 'aliviado' | undefined => {
     switch (stateString.toLowerCase()) {
@@ -20,6 +21,7 @@ const mapStringToState = (stateString: string): 'explotando' | 'moderado' | 'ali
 export const useMessage = () => {
     const [conversation, setConversation] = useState<Message[]>([])
     const [message, setMessage] = useState<string>("")
+    const [loading, setLoading] = useState<boolean>(false)
     const {increment} = useContext(AwardsContext);
 
     // Agrega primera interacion con el jefe
@@ -30,13 +32,14 @@ export const useMessage = () => {
         }])
     }, [])
     const handleOnSubmit = async () => {
+        setLoading(true)
         const estadoBot = await analizedFurious([
             ...conversation,
             {id: generateId(), role: 'user', content: message},
         ])
         if (estadoBot === 'explotando') {
-            console.log("entro aqui")
             increment()
+            await saveMessageFurious(message)
         }
 
         const {messages, newMessage} = await chattingBoss([
@@ -54,11 +57,13 @@ export const useMessage = () => {
             ]);
         }
         setMessage("")
+        setLoading(false)
     }
 
     return {
         conversation,
         message,
+        loading,
         setMessage,
         handleOnSubmit
     }

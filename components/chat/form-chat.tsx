@@ -4,7 +4,7 @@ import {MessageUser,ScrollBotton,InputChat,MessageBot} from "@/components/export
 import {useMessage} from "@/hooks";
 
 export const FormChat = () => {
-    const {conversation, message, setMessage, handleOnSubmit} = useMessage()
+    const {conversation, message, loading, setMessage, handleOnSubmit} = useMessage()
 
     const handleOnEnter = async (event: KeyboardEvent<HTMLInputElement>) => {
         if (event.key === "Enter") {
@@ -24,7 +24,7 @@ export const FormChat = () => {
                     )}
                 </ScrollBotton>
                 <div className="py-5">
-                    <InputChat onKeyDown={handleOnEnter} value={message} onClick={handleOnSubmit} disabled={false}
+                    <InputChat disabled={loading} onKeyDown={handleOnEnter} value={message} onClick={handleOnSubmit}
                                onChange={event => setMessage(event.target.value)}></InputChat>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 import {useContext, useEffect, useState} from "react";
 import {AwardsContext} from "@/contexts/awardsContext";
 import {Achievement, obtenerData} from "@/data/achievement";
+import {saveAchievement} from "@/helpers";
 
 export const useAchievements = () => {
     const {counter} = useContext(AwardsContext)
@@ -16,6 +17,7 @@ export const useAchievements = () => {
         // Si encontro un prermio mostrarlo
         if (achievement) {
             setAchievement(achievement)
+            saveAchievement(achievement)
             setIsShow(true)
             timeOut = setTimeout(() => {
                 setIsShow(false)
