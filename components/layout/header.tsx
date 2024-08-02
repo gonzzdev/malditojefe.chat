@@ -13,7 +13,7 @@ export function Header() {
             </div>
             <ul className="hidden sm:flex flex-row gap-4 text-[#16161E] text-lg font-semibold">
                 <li className="hover:text-[#EAD82A] transition duration-200">
-                    <Link href="/home">
+                    <Link href="/game">
                         Juego
                     </Link>
                 </li>
