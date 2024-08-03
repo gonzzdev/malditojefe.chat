@@ -8,14 +8,14 @@ export interface CardCollectionProps {
 
 export const CardCollection = ({url, name, isAchievement = false}: CardCollectionProps) => {
     return (
-        <div className="max-w-44 flex flex-col gap-2 px-2 py-2 bg-[#16161E] rounded-lg">
+        <div className="w-44 flex flex-col gap-2 px-2 py-2 bg-[#16161E] rounded-lg self-start">
             <div className="w-full bg-gradient-to-t from-red-950 to-black px-2 py-2 rounded-lg border-2 border-gray-500">
                 <Image alt="imagen de la camiseta"
                        src={url}
                        sizes="100vw"
                        width={0}
                        height={0}
-                       style={{width: 'auto', height: 'auto'}}
+                       style={{width: '100vw', height: 'auto'}}
                 />
             </div>
             <div>
