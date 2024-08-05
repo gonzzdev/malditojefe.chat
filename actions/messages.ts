@@ -68,6 +68,17 @@ const mapStringToTypeReaction = (stateString: string): 'fire' | 'baddy' | 'cry' 
     }
 };
 
+function groupBy<T, K>(array: T[], key: (item: T) => K): Map<K, T[]> {
+    return array.reduce((result, currentItem) => {
+        const groupKey = key(currentItem);
+        if (!result.has(groupKey)) {
+            result.set(groupKey, []);
+        }
+        result.get(groupKey)!.push(currentItem);
+        return result;
+    }, new Map<K, T[]>());
+}
+
 export const getMessagesUserRecent = async (): Promise<CommentProps[]> => {
     'use server'
     const reactionsData = dataReactions();
@@ -89,7 +100,7 @@ export const getMessagesUserRecent = async (): Promise<CommentProps[]> => {
         throw Error("Ocurrio un error al consultar reactions")
     }
 
-    const reactionsGroup = Map.groupBy(reactions, reaction => reaction.id_message)
+    const reactionsGroup = groupBy(reactions, reaction => reaction.id_message)
 
     return messages.map(message => {
         return {
@@ -140,7 +151,7 @@ export const getMessagesUserTop = async (): Promise<CommentProps[]> => {
     if (messagesError) {
         throw Error("Ocurrio un error al consultar mensajes")
     }
-    const reactionsGroup = Map.groupBy(reactions, reaction => reaction.id_message)
+    const reactionsGroup = groupBy(reactions, reaction => reaction.id_message)
 
     return messages.map(message => {
         return {
