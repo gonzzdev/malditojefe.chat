@@ -1,9 +1,9 @@
-import {analizedFurious, chattingBoss, Message} from "@/actions";
+import {analizedFurious, chattingBoss, Message, saveMessageUser} from "@/actions";
 import {generateId} from "ai";
 import {readStreamableValue} from "ai/rsc";
 import {useContext, useEffect, useState} from "react";
 import {AwardsContext} from "@/contexts/awardsContext";
-import {saveMessageFurious} from "@/actions/chat";
+import {getDataAchievement} from "@/data/achievement";
 
 const mapStringToState = (stateString: string): 'explotando' | 'moderado' | 'aliviado' | undefined => {
     switch (stateString.toLowerCase()) {
@@ -22,7 +22,8 @@ export const useMessage = () => {
     const [conversation, setConversation] = useState<Message[]>([])
     const [message, setMessage] = useState<string>("")
     const [loading, setLoading] = useState<boolean>(false)
-    const {increment} = useContext(AwardsContext);
+    const {counter, increment} = useContext(AwardsContext);
+    const achievements = getDataAchievement();
 
     // Agrega primera interacion con el jefe
     useEffect(() => {
@@ -38,8 +39,11 @@ export const useMessage = () => {
             {id: generateId(), role: 'user', content: message},
         ])
         if (estadoBot === 'explotando') {
+            const incrementado = counter + 1
+            const achievement = achievements
+                .find(data => data.range === incrementado)
+            await saveMessageUser(message, achievement!!.name)
             increment()
-            await saveMessageFurious(message)
         }
 
         const {messages, newMessage} = await chattingBoss([
