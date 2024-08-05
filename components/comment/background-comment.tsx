@@ -1,8 +1,8 @@
 import {Comment, CommentProps} from "./comment";
-import {obtenerCommentarios, Paginacion} from "@/actions";
+import {getMessagesBoss, Paginacion} from "@/actions";
 
-export const BackgroundComment = () => {
-    const comments: Paginacion<CommentProps> = obtenerCommentarios(0, 10);
+export const BackgroundComment = async () => {
+    const comments= await getMessagesBoss(0, 10);
     return (
         <div className="z-20 absolute -top-32 flex items-center justify-center w-full">
             <div className="grid gap-4 min-w-max grid-cols-3">

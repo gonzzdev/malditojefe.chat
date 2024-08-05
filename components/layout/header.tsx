@@ -23,7 +23,7 @@ export function Header() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/home" className="hover:text-[#EAD82A] transition duration-200">
+                    <Link href="/ranking" className="hover:text-[#EAD82A] transition duration-200">
                         Top 100
                     </Link>
                 </li>

@@ -3,8 +3,6 @@ import {openai} from "@ai-sdk/openai";
 import {createStreamableValue} from "ai/rsc";
 import {generateText, streamText} from "ai";
 import {z} from "zod";
-import {CommentProps} from "@/components/comment/comment";
-import {supabase} from "@/configs/supabase";
 
 export interface Message {
     id: string,
@@ -56,14 +54,4 @@ export const chattingBoss = async (history: Message[]) => {
         messages: history,
         newMessage: stream.value,
     };
-}
-
-export const saveMessageFurious = async (message: string) => {
-    'use server'
-    const {data, error} = await supabase.from("messages")
-        .insert([{
-            content: message
-        }])
-        .select();
-    console.log(data,error);
 }

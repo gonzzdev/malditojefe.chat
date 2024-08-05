@@ -5,7 +5,7 @@ export interface Achievement {
     range: number
 }
 
-export const obtenerData = (): Achievement[] => [
+export const getDataAchievement = (): Achievement[] => [
     {
         "id": 1,
         "name": "First Achievement",
