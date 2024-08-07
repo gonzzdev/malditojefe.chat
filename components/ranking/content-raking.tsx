@@ -11,11 +11,11 @@ export const ContentRaking = async () => {
                 <TabsTrigger value="recent">Recientes</TabsTrigger>
             </TabsList>
             <TabsContent value="top"
-                         className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+                         className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 place-items-center">
                 {messagesTop.map(message => <Comment key={message.id} {...message}/>)}
             </TabsContent>
             <TabsContent value="recent"
-                         className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+                         className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 place-items-center">
                 {messagesRecient.map(message => <Comment key={message.id} {...message}/>)}
             </TabsContent>
         </Tabs>

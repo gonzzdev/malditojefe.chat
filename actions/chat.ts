@@ -15,7 +15,7 @@ export const analizedFurious = async (history: Message[]) => {
     'use server'
     const {toolResults} = await generateText({
         model: openai('gpt-3.5-turbo'),
-        system: 'Examinaras la respuesta si te hace si no te hace caso devolveras la palabra explotando si estas medio molesto moderado, y si no te molesta mucho la respuesta sera alividado',
+        system: 'Examinaras la respuesta si te hace o si no te hace caso devolveras la palabra explotando si estas medio molesto moderado, y si no te molesta mucho la respuesta sera alividado',
         messages: history,
         tools: {
             analizedFurious: {

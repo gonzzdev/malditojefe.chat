@@ -29,7 +29,7 @@ export const useMessage = () => {
     useEffect(() => {
         setConversation([{
             id: generateId(), role: 'assistant',
-            content: 'hola este un chat de bienvenida al juego del maldito jefe'
+            content: 'Hola Godinez. Venga a mi oficina por favor. 😡'
         }])
     }, [])
     const handleOnSubmit = async () => {

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.40",
+    "@midudev/tailwind-animations": "^0.0.7",
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.0",
     "@supabase/supabase-js": "^2.45.0",
@@ -18,6 +19,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.414.0",
     "next": "14.2.5",
+    "random-avatar-generator": "^2.0.0",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.4.0",

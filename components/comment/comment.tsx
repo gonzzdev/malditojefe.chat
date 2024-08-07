@@ -46,7 +46,7 @@ export const Comment: React.FC<CommentProps> = ({
 
     return (
         <div
-            className={`border-solid border-4 border-[#E5E4F9]/80 p-8 rounded-2xl bg-gradient-to-b from-[#16161E] to-gray-400/60 text-[#e5e4f9] w-full sm:p-10 sm:max-w-lg md:p-6 md:max-w-[432px] 2xl:p-10 2xl:max-w-lg`}>
+            className={`border-solid border-4 border-[#E5E4F9]/80 p-8 rounded-2xl bg-gradient-to-b from-[#16161E] to-gray-400/60 text-[#e5e4f9] w-full sm:p-10 sm:max-w-lg md:p-6 max-w-[340px] md:max-w-[432px] 2xl:p-10 2xl:max-w-lg`}>
             <div className="flex flex-row gap-3 items-end">
                 <Avatar className="w-14 h-14">
                     <AvatarImage src={image}/>

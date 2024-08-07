@@ -9,8 +9,8 @@ export interface CardCollectionProps {
 export const CardCollection = ({url, name, isAchievement = false}: CardCollectionProps) => {
     return (
         <div className="w-44 flex flex-col gap-2 px-2 py-2 bg-[#16161E] rounded-lg self-start">
-            <div className="w-full bg-gradient-to-t from-red-950 to-black px-2 py-2 rounded-lg border-2 border-gray-500">
-                <Image alt="imagen de la camiseta"
+            <div className="w-full bg-gradient-to-t from-red-950 to-black px-2 py-2 rounded-lg border-2 border-gray-500 hover:animate-tada">
+                <Image alt="Imagen del logro encontrado"
                        src={url}
                        sizes="100vw"
                        width={0}
@@ -20,7 +20,7 @@ export const CardCollection = ({url, name, isAchievement = false}: CardCollectio
             </div>
             <div>
                 {isAchievement && <div className="text-white w-full text-center">Has conseguido:</div>}
-                <div className="text-yellow-400 w-full text-center">{name}</div>
+                <div className="text-yellow-400 w-full text-center whitespace-nowrap">{name}</div>
             </div>
         </div>
     )

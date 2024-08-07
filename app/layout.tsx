@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="es">
-        <body className={`${inter.className} bg-[#16161E]`}>
+        <body className={`${inter.className} bg-[#16161E] animate-slide-in-top`}>
         <Header/>
         {children}
         </body>

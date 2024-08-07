@@ -11,17 +11,17 @@ export const InputChat = ({value, onChange, onClick, onKeyDown, disabled}: {
 }) => {
     return (
         <div
-            className="bg-[rgb(22,22,30)]/70 w-full flex flex-row items-center shadow-sm rounded-full focus-within:border-red-600 border border-red-900 pr-5 cursor-pointer">
+            className="bg-[rgb(22,22,30)]/70 w-full flex flex-row items-center shadow-sm rounded-full focus-within:border-[#F4222D] border border-[#8b141a] pr-5 cursor-pointer">
             {disabled ?
                 <p className="text-2xl px-5 py-4 text-gray-400 w-full">{value}</p> :
                 <Input
                     onKeyDown={onKeyDown}
                     value={value}
                     onChange={onChange}
-                    className="w-full placeholder:text-gray-300 text-gray-300 border-0 bg-transparent focus:border-transparent focus:ring-0 text-2xl px-5 py-8 italic"
-                    placeholder="Escribe en el chat para comenzar el juego"/>}
+                    className="w-full placeholder:text-gray-300 text-gray-300 border-0 bg-transparent focus:border-transparent focus:ring-0 text-xl px-5 py-8 italic md:text-2xl"
+                    placeholder="Escribe en el chat para comenzar >:)"/>}
             <button onClick={onClick}>
-                {disabled ? <Loader className="animate-spin" color="red"/> : <SendHorizontal color="red"/>}
+                {disabled ? <Loader className="animate-spin" color="#F4222D"/> : <SendHorizontal color="#F4222D"/>}
             </button>
         </div>
     )

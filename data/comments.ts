@@ -88,7 +88,7 @@ export const getDataMessagesBoss = (): Array<CommentProps> => [
     {
         "id": 5,
         "title": "Ash Catsup",
-        "subtitle": "Atrapalos a todos",
+        "subtitle": "Atrápalos a todos",
         "content": "Recibió una acta administrativa por ser sorprendido jugando videojuegos mientras hacía del baño.",
         "image": "https://avataaars.io/?accessoriesType=Blank&avatarStyle=Circle&clotheColor=Blue01&clotheType=BlazerShirt&eyeType=Squint&eyebrowType=DefaultNatural&facialHairColor=BlondeGolden&facialHairType=MoustacheFancy&hairColor=Platinum&hatColor=PastelBlue&mouthType=Concerned&skinColor=DarkBrown&topType=Eyepatch",
         "reactions": [
@@ -109,8 +109,8 @@ export const getDataMessagesBoss = (): Array<CommentProps> => [
     {
         "id": 6,
         "title": "Gary Trip",
-        "subtitle": "Echale ganas pues",
-        "content": "El jefe quiere darte una mentoría. Resulta que solo tienes que echarle más ganas",
+        "subtitle": "Te toca desplegar en viernes",
+        "content": "El jefe quiere publicar los cambios de último momento",
         "image": "https://avataaars.io/?accessoriesType=Prescription01&avatarStyle=Circle&clotheColor=Heather&clotheType=ShirtScoopNeck&eyeType=Cry&eyebrowType=UpDown&facialHairColor=BlondeGolden&facialHairType=BeardMagestic&hairColor=Black&hatColor=PastelOrange&mouthType=Sad&skinColor=Tanned&topType=ShortHairShortCurly",
         "reactions": [
             {
@@ -130,7 +130,7 @@ export const getDataMessagesBoss = (): Array<CommentProps> => [
     {
         "id": 7,
         "title": "Bryan.r",
-        "subtitle": "Ya sé que estás de vacaciones",
+        "subtitle": "Ya sé que estás de vacaciones pero...",
         "content": "Pero es urgente que puedas revisar esta tarea que le tomaría 30 minutos al jefe.",
         "image": "https://avataaars.io/?accessoriesType=Prescription01&avatarStyle=Circle&clotheColor=Gray02&clotheType=ShirtScoopNeck&eyeType=Default&eyebrowType=AngryNatural&facialHairColor=Black&facialHairType=MoustacheMagnum&hairColor=Black&hatColor=PastelGreen&mouthType=Sad&skinColor=Tanned&topType=WinterHat2",
         "reactions": [
